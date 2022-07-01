@@ -11,24 +11,31 @@ module.exports = {
       nome: {
         type: Sequelize.STRING
       },
-      ativo: {
-        type: Sequelize.BOOLEAN
-      },
       email: {
         type: Sequelize.STRING
       },
-      role: {
+      telefone: {
         type: Sequelize.STRING
-      },rua: {
+      },
+      cpf: {
+        type: Sequelize.STRING
+      },
+      cep: {
+        type: Sequelize.STRING
+      },
+      rua: {
         type: Sequelize.STRING
       },
       numero: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
+      },
+      bairro: {
+        type: Sequelize.STRING
       },
       cidade: {
         type: Sequelize.STRING
       },
-      celular: {
+      estado: {
         type: Sequelize.STRING
       },
       createdAt: {
