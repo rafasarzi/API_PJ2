@@ -13,26 +13,29 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING
-      }, 
-      ativo: {
-        type: Sequelize.BOOLEAN
       },
-      role: {
+      telefone: {
         type: Sequelize.STRING
       },
       cpf: {
         type: Sequelize.STRING
-      }, 
+      },
+      cep: {
+        type: Sequelize.STRING
+      },
       rua: {
         type: Sequelize.STRING
       },
       numero: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
+      },
+      bairro: {
+        type: Sequelize.STRING
       },
       cidade: {
         type: Sequelize.STRING
       },
-      celular: {
+      estado: {
         type: Sequelize.STRING
       },
       createdAt: {

@@ -2,14 +2,15 @@
 module.exports = (sequelize, DataTypes) => {
   const Docentes = sequelize.define('Docentes', {
     nome: DataTypes.STRING,
-    ativo: DataTypes.BOOLEAN,
     email: DataTypes.STRING,
-    role: DataTypes.STRING,
+    telefone: DataTypes.STRING,
     cpf: DataTypes.STRING,
+    cep: DataTypes.STRING,
     rua: DataTypes.STRING,
-    numero: DataTypes.INTEGER,
+    numero: DataTypes.STRING,
+    bairro: DataTypes.STRING,
     cidade: DataTypes.STRING,
-    celular: DataTypes.STRING,
+    estado: DataTypes.STRING,
   }, {})
   Docentes.associate = function(models) {
     Docentes.hasMany(models.Turmas, {
